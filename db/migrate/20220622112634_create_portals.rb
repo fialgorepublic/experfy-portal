@@ -12,6 +12,7 @@ class CreatePortals < ActiveRecord::Migration[6.1]
       t.string :google_webmaster_id
       t.string :bing_webmaster_id
       t.string :tracking_pixel
+      t.json :tooltip_info
       t.integer :microsite_setting
 
       t.timestamps
