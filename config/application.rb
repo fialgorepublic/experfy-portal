@@ -34,5 +34,8 @@ module ExperfyPortal
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # autoload_paths.
+    config.autoload_paths << Rails.root.join("app", "services")
   end
 end
