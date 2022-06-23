@@ -6,6 +6,7 @@ Rails.application.routes.draw do
           collection do
             get :company_info
           end
+          resources :brands, only: %i[ create ]
         end
       end
     end
